@@ -16,12 +16,17 @@ body{
 
 /* ===== HERO HEADER WITH IMAGE ===== */
 header{
-    background-image: url("images/antarctica-header.jpeg");
+   background-image: url("images/antarctica-header.jpeg");
     background-size: cover;
     background-position: center 35%;
     background-repeat: no-repeat;
     color:white;
-    padding:140px 20px;
+    height: 500px;                 /* Fixed header height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   /* Moves content upward */
+    align-items: center;
+    padding-top: 80px;             /* Controls vertical position */
     text-align:center;
     position:relative;
 }
@@ -241,6 +246,7 @@ for sealing potential in shallow marine sediments.
 
 </body>
 </html>
+
 
 
 
