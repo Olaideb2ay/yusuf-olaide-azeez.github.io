@@ -4,29 +4,139 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yusuf Olaide Azeez | Marine Geophysics</title>
+
 <style>
-body{font-family:Georgia, 'Times New Roman', serif;margin:0;background:#ffffff;color:#1a1a1a;line-height:1.7}
-header {
-    background: linear-gradient(to right, #001f3f, #005f73);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    border-bottom: 4px solid #94d2bd;}
-header h1{margin:0;font-size:2.2rem}
-header p{margin:6px 0 0 0;font-size:1rem;color:#dbe4f3}
-nav{background:#f4f6f8;padding:12px 20px;border-bottom:1px solid #e0e0e0}
-nav a{margin-right:20px;text-decoration:none;color:#0b1f3a;font-weight:600;font-size:0.95rem}
-nav a:hover{text-decoration:underline}
-main{max-width:1000px;margin:50px auto;padding:0 20px}
-h2{border-bottom:2px solid #e6e6e6;padding-bottom:8px;color:#0b1f3a}
-.section{margin-bottom:60px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:30px}
-.figure{border:1px solid #e5e5e5;padding:12px;background:#fafafa}
-.figure img{width:100%;height:auto;display:block}
-.caption{font-size:0.85rem;color:#444;margin-top:8px}
-footer{text-align:center;padding:30px 20px;background:#f4f6f8;font-size:0.85rem;color:#555}
+body{
+    font-family: Georgia, 'Times New Roman', serif;
+    margin:0;
+    background:#ffffff;
+    color:#1a1a1a;
+    line-height:1.7
+}
+
+/* ===== HERO HEADER WITH IMAGE ===== */
+header{
+    background-image: url("images/antarctica-header.jpg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    color:white;
+    padding:140px 20px;
+    text-align:center;
+    position:relative;
+}
+
+/* Overlay for readability */
+header::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.55);
+}
+
+/* Keep text above overlay */
+header h1,
+header p{
+    position:relative;
+    z-index:1;
+}
+
+header h1{
+    margin:0;
+    font-size:3rem;
+    letter-spacing:1px;
+}
+
+header p{
+    margin:8px 0 0 0;
+    font-size:1.1rem;
+    color:#e6f2ff;
+}
+
+/* Accent line */
+header::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:#94d2bd;
+}
+
+nav{
+    background:#f4f6f8;
+    padding:12px 20px;
+    border-bottom:1px solid #e0e0e0;
+    text-align:center;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#0b1f3a;
+    font-weight:600;
+    font-size:0.95rem;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+main{
+    max-width:1100px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+h2{
+    border-bottom:2px solid #e6e6e6;
+    padding-bottom:8px;
+    color:#0b1f3a;
+}
+
+.section{
+    margin-bottom:70px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.figure{
+    border:1px solid #e5e5e5;
+    padding:12px;
+    background:#fafafa;
+}
+
+.figure img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.caption{
+    font-size:0.85rem;
+    color:#444;
+    margin-top:8px;
+}
+
+footer{
+    text-align:center;
+    padding:30px 20px;
+    background:#f4f6f8;
+    font-size:0.85rem;
+    color:#555;
+}
 </style>
 </head>
+
 <body>
 
 <header>
@@ -49,15 +159,15 @@ footer{text-align:center;padding:30px 20px;background:#f4f6f8;font-size:0.85rem;
 <div class="section">
 <h2>About</h2>
 <p>
-I am a geoscientist and a Ph.D. candidate in Geophysics from Texas A&M University-Corpus Christi,
-I specialize in gas hydrate modeling, reservoir characterization, static and dynamic model, and 
-reaction transport modeling (RTM). I have gained practical experience through my involvement in 
-various seismic data acquisition and interpretation, well log analysis and research cruises to 
-the Mediterranean Sea, Dead Sea, Corpus Christi Bay and Ross Sea in Antarctica.
-With a diverse background in geophysics and marine geoscience, I bring broad knowledge and skills
-in data acquisition, processing and interpretation in near-surface geophysical methods such as
-electrical resistivity tomography (ERT), Ground Penetrating Radar (GPR), FDEM, TDEM, and other geophysics techniques
-like gravity and magnetic.
+I am a geoscientist and a Ph.D. candidate in Geophysics from Texas A&M University–Corpus Christi.
+I specialize in gas hydrate modeling, reservoir characterization, static and dynamic modeling,
+and reactive transport modeling (RTM). I have gained practical experience through seismic data
+acquisition and interpretation, well log analysis, and research cruises to the Mediterranean Sea,
+Dead Sea, Corpus Christi Bay, and the Ross Sea in Antarctica.
+With a diverse background in geophysics and marine geoscience, I bring broad expertise in data
+acquisition, processing, and interpretation using near-surface geophysical methods such as
+electrical resistivity tomography (ERT), ground penetrating radar (GPR), FDEM, TDEM, and other
+techniques including gravity and magnetics.
 </p>
 </div>
 
@@ -66,61 +176,60 @@ like gravity and magnetic.
 <div class="grid">
 
 <div class="figure">
-<img src="images/Lab_work.jpeg" alt="Multibeam bathymetry example">
+<img src="images/Lab_work.jpeg">
 <div class="caption">
-Figure 1. Working with the Texas A&M University-Corpus Christi Isotope Core Lab. for geochemical analysis
-of samples collected from the Ross Sea, aboard R/V Palmer's scientific expediction in Antarctica
-
+Figure 1. Isotope geochemical analysis at the TAMU-CC Core Lab using sediment samples
+collected from the Ross Sea during R/V Palmer expedition, Antarctica.
 </div>
 </div>
 
 <div class="figure">
-<img src="images/cc2.jpeg" alt="Water column gas flares">
+<img src="images/cc2.jpeg">
 <div class="caption">
-Figure 2. Research cruise to the Corpus Christi Bay for near-seafloor multibeam echo sounding (MBES)
-data acquiaition conducted using 3400-OTS Pole-Mount Sub-bottom profiler.
+Figure 2. Near-seafloor multibeam echo sounding (MBES) data acquisition
+in Corpus Christi Bay using a 3400-OTS pole-mounted sub-bottom profiler.
 </div>
 </div>
 
 <div class="figure">
-<img src="images/cc4.jpeg" alt="Reactive transport modeling">
+<img src="images/cc4.jpeg">
 <div class="caption">
-Figure 3. Core sediment sampling at the Ross Sea Antarctica.
+Figure 3. Core sediment sampling operations in the Ross Sea, Antarctica.
 </div>
 </div>
 
 <div class="figure">
-<img src="images/cc5.jpeg" alt="Reactive transport modeling">
+<img src="images/cc5.jpeg">
 <div class="caption">
-Figure 4. Seismic refraction survey set-up at Texas A&M University-Corpus Christi Geophysics test site.
+Figure 4. Seismic refraction survey setup at the TAMU-CC Geophysics Test Site.
 </div>
 </div>
 
 <div class="figure">
-<img src="images/cc6.jpeg" alt="Reactive transport modeling">
+<img src="images/cc6.jpeg">
 <div class="caption">
-Figure 5. Passive seismic data acquistion using Tromino.
+Figure 5. Passive seismic data acquisition using Tromino instrumentation.
 </div>
 </div>
 
 <div class="figure">
-<img src="images/cc7.jpeg" alt="Reactive transport modeling">
+<img src="images/cc7.jpeg">
 <div class="caption">
 Figure 6. Reactive transport simulation illustrating methane–sulfate interaction
 and geochemical zonation in shallow marine sediments.
 </div>
 </div>
-  
+
 </div>
 </div>
 
 <div class="section">
 <h2>Current Focus</h2>
 <p>
-Ongoing research focuses on mixed hydrate modeling for potential gas production and carbon sequestration
-in the Gulf of Mexico, effect of CO2 leakage on near-seafloor reaction biogeochemical processes using
-multiscale reactive trasnport modeling and numerical simulation and CO2 hydrate modeling for sealing 
-potentials in near-seafloor sediments.
+Ongoing research focuses on mixed hydrate modeling for gas production and carbon sequestration
+in the Gulf of Mexico, assessing CO₂ leakage impacts on near-seafloor biogeochemical processes
+using multiscale reactive transport modeling and numerical simulation, and CO₂ hydrate modeling
+for sealing potential in shallow marine sediments.
 </p>
 </div>
 
@@ -132,14 +241,3 @@ potentials in near-seafloor sediments.
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
