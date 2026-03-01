@@ -5,46 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Research | Yusuf Olaide Azeez</title>
 <link rel="stylesheet" href="style.css" />
+   
 </head>
-body{
-    font-family: Georgia, 'Times New Roman', serif;
-    margin:0;
-    background:#ffffff;
-    color:#1a1a1a;
-    line-height:1.7;
-}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Research | Yusuf Olaide Azeez</title>
 
-/* ===== HERO HEADER WITH IMAGE ===== */
+<style>
+/* ===== HERO HEADER ===== */
 header{
-    background-image: url("images/antarctica-header.jpeg");
+    background-image: url("images/antarctica-header.jpg");
     background-size: cover;
     background-position: center 35%;
     background-repeat: no-repeat;
     color:white;
-    height: 400px;
+    height:520px;
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    padding-top:80px;
+    padding-top:70px;
     text-align:center;
     position:relative;
 }
 
-/* Dark overlay */
 header::before{
     content:"";
     position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    top:0; left:0; right:0; bottom:0;
     background:rgba(0,0,0,0.55);
 }
 
-/* Keep text above overlay */
-header h1,
-header p{
+header h1, header p{
     position:relative;
     z-index:1;
 }
@@ -52,16 +44,14 @@ header p{
 header h1{
     margin:0;
     font-size:3rem;
-    letter-spacing:1px;
 }
 
 header p{
-    margin:8px 0 0 0;
+    margin-top:8px;
     font-size:1.1rem;
     color:#e6f2ff;
 }
 
-/* Accent line */
 header::after{
     content:"";
     position:absolute;
@@ -71,50 +61,9 @@ header::after{
     height:4px;
     background:#94d2bd;
 }
+</style>
 
-/* Navigation */
-nav{
-    background:#f4f6f8;
-    padding:12px 20px;
-    border-bottom:1px solid #e0e0e0;
-    text-align:center;
-}
-
-nav a{
-    margin:0 15px;
-    text-decoration:none;
-    color:#0b1f3a;
-    font-weight:600;
-    font-size:0.95rem;
-}
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-nav a.active{
-    color:#005f73;
-    border-bottom:3px solid #94d2bd;
-    padding-bottom:4px;
-}
-
-main{
-    max-width:1100px;
-    margin:60px auto;
-    padding:0 20px;
-}
-
-.section{
-    margin-bottom:70px;
-}
-
-footer{
-    text-align:center;
-    padding:30px 20px;
-    background:#f4f6f8;
-    font-size:0.85rem;
-    color:#555;
-}
+</head>
 <body>
 
 <header>
@@ -176,4 +125,5 @@ relevant to energy systems and climate.
 
 </body>
 </html>
+
 
