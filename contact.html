@@ -4,6 +4,88 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Contact | Yusuf Olaide Azeez</title>
+
+<style>
+/* ===== HERO HEADER ===== */
+header{
+    background-image: url("images/antarctica-header.jpeg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    color:white;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top:80px;
+    text-align:center;
+    position:relative;
+}
+
+header::before{
+     content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.55);
+}
+
+header h1, header p{
+    position:relative;
+    z-index:1;
+}
+
+header h1{
+    margin:0;
+    font-size:3rem;
+    letter-spacing:1px;
+}
+
+header p{
+    margin:8px 0 0 0;
+    font-size:1.1rem;
+    color:#e6f2ff;
+}
+
+header::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:#94d2bd;
+}
+
+nav{
+    background:#f4f6f8;
+    padding:12px 20px;
+    border-bottom:1px solid #e0e0e0;
+    text-align:center;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#0b1f3a;
+    font-weight:600;
+    font-size:0.95rem;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Active Page Highlight */
+nav a.active{
+    color:#005f73;
+    border-bottom:3px solid #94d2bd;
+    padding-bottom:4px;
+}
+</style>
 </head>
 <body>
 <header><h1>Contact</h1></header>
@@ -13,7 +95,7 @@
 <a href="projects.html">Projects</a>
 <a href="publications.html">Publications</a>
 <a href="cv.html">CV</a>
-<a href="contact.html">Contact</a>
+<a href="contact.html" class="active">Contact</a>
 </nav>
 <main>
 <section>
@@ -25,3 +107,4 @@
 <footer><p>© 2026 Yusuf Olaide Azeez</p></footer>
 
 </body>
+
